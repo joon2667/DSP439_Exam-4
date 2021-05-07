@@ -79,7 +79,7 @@ def calc_ling_complex(k, sequence):
 def main():
   #Read in the sequences file and create an output file to post  all 
   #complexity values.
-  f = open("sequences.txt", "r")
+  f = open("Example_strings.txt", "r")
   g = open("linguistic_complexities.txt", "w")
   
   #Iterate through every line in the sequences file and calculate the
