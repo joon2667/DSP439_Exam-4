@@ -1,15 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
-
-
 import random
 import pandas as pd
-
-
-# In[ ]:
-
 
 # Function to achieve goal from question #1. Counts kmers of size k.
 # Returns both the observed number of kmers for each k as well as the
@@ -45,10 +38,6 @@ def count_kmers(k, sequence):
 # and possible kmers for each k value and then aggregates them into a pandas
 # dataframe.
 
-
-# In[ ]:
-
-
 def create_k_pd(k, sequence):
   
   k_list = list(range(k+1))[1:]
@@ -76,10 +65,6 @@ def create_k_pd(k, sequence):
 # linguistuc complexity, which involves dividing the total number of observed
 # kmers with the total number of theoretically possible kmers.
 
-
-# In[ ]:
-
-
 def calc_ling_complex(k, sequence):
     #Use the sums of the total observed kmers and the total possible kmers to
     #calculate the linguistic complexity
@@ -89,15 +74,6 @@ def calc_ling_complex(k, sequence):
   
 
 #Main function used to generate results for each string
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
 
 
 def main():
