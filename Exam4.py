@@ -72,7 +72,6 @@ def calc_ling_complex(k, sequence):
 def main():
   #Read in the sequences file and create an output file to post values
   f = open("test_sequences.txt", "r")
-  #g = open("linguistic_complexities.txt", "w")
   
   #Iterate through every line in the sequences file and calculate the
   #linguistic complexity for it. Then write that value into the output file
@@ -81,8 +80,6 @@ def main():
       print()
       number, df = calc_ling_complex(len(line.split()[0]), line.split()[0])
       message = "The linguistic complexity for " + line.split()[0] + " is: "
-#      g.write(message+str(number))
-#      g.write("\n")
       
       #For each sequence, make a seperate text file that contains the data frame
       tfile = open(line.split()[0]+".txt", 'w')
